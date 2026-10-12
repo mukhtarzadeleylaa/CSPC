@@ -35,3 +35,43 @@ conda activate cspc
 
 **Noise observation:**
 The measured acceleration is close to -9.81 m/s², but it is noisy. Small errors in position measurements become larger when calculating derivatives, especially acceleration.
+
+## PW2 - Lab b: Optimization
+**Objective:**
+Compare three optimization methods: Gradient Descent, Newton's Method, and SLSQP.
+
+**Results for f(x):**
+- Gradient Descent: x ≈ 3.0
+- Newton's Method: x = 3.0
+- SLSQP: x = 3.0
+
+All three methods found the minimum at x = 3.
+
+**Results for g(x):**
+- Gradient Descent (x0=0): x ≈ -1.30084
+- Newton's Method (x0=0): x ≈ 0.16994
+- SLSQP (x0=0): x ≈ -1.30086
+- SLSQP (x0=2): x ≈ -1.30064
+- SLSQP (x0=1): x ≈ 1.13090
+
+**Analysis:**
+
+Gradient Descent and SLSQP found a minimum near x = -1.30.
+
+SLSQP also found another local minimum near x = 1.13 when starting from x0 = 1.
+
+Newton's Method converged to x = 0.17, which is a local maximum, not a minimum.
+
+This shows that optimization methods can give different results depending on the starting point and the method used.
+
+**Optimization Graph:**
+
+![Optimization Graph](PW2/Lab%20B/optimization.png)
+
+### Part 3 - Chemistry 1: Reaction Rate
+
+**Fitted rate constant:** k = 0.26176
+
+The fitted curve closely matches the measured data.
+
+![Kinetics Graph](PW2/Lab%20B/kinetics.png)
