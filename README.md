@@ -75,3 +75,34 @@ This shows that optimization methods can give different results depending on the
 The fitted curve closely matches the measured data.
 
 ![Kinetics Graph](PW2/Lab%20B/kinetics.png)
+
+**Chemical Equilibrium Results:**
+- Newton: x ≈ 0.66385
+- SLSQP: x ≈ 0.66385
+- H2 = 0.33615 mol
+- I2 = 0.33615 mol
+- HI = 1.32770 mol
+
+Both methods agree and give the same equilibrium point.
+
+![Chemical Equilibrium](PW2/Lab%20B/equilibrium.png)
+
+
+
+## PW3 - Statistical Analysis
+
+### Normality Tests
+We used the Shapiro-Wilk test to check if our four variables are normally distributed.
+
+The results were:
+
+* Age: p = 0.00607
+* Cholesterol: p = 5.91e-09
+* Blood Pressure: p = 1.80e-06
+* Maximum Heart Rate: p = 6.996e-05
+
+All the p-values are smaller than 0.05, so none of the four variables passed the normality test.
+
+From the histograms, some distributions look close to normal, but they are not perfectly symmetric. We can also see some extreme values, especially for cholesterol.
+
+These results will help us choose the right statistical tests for the next part.
